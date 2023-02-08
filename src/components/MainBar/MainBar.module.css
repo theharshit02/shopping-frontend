@@ -1,0 +1,43 @@
+.mainbarContainer{
+    width: 80%;
+    height: 80vh;
+    /* background: blueviolet; */
+    display: flex;
+    justify-content: center;
+}
+
+.sorting{
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+.line{
+    border: 1px solid rgb(167, 167, 167);
+    border-bottom: 0px;
+    width: 650px;
+}
+
+.view{
+    background: transparent;
+    border-radius: 10px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view:hover{
+    background: black;
+    color: white;
+}
+
+.options{
+    border: 0px;
+    font-size: 14px;
+    margin-top: 3px;
+}
