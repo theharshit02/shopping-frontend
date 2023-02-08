@@ -7,7 +7,7 @@ const SideBar = () => {
       <div className={styles.filterContainer}>
         <input className={styles.search} placeholder='Search' type="text"/>
         <p className={styles.heading}>Category</p>
-        <p className={styles.heading}>Company</p>
+        <p className={styles.heading}>Brand</p>
         <p className={styles.heading}>Colors</p>
         <p className={styles.heading}>Price</p>
         <div className={styles.freeShip}>

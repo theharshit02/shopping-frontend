@@ -1,0 +1,47 @@
+.listProduct{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.img{
+    height: 200px;
+    width: 300px;
+    border-radius: 5px;
+}
+
+.data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.data p{
+    margin: 5px;
+}
+
+.name{
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 0.17em;
+}
+
+.price{
+    color: rgb(4, 174, 4);
+}
+
+.btn{
+    width: 70px;
+    letter-spacing: 0.1em;
+    background: green;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    height: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: black;
+}

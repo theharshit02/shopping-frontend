@@ -1,0 +1,30 @@
+.gridProduct{
+    height: 250px;
+    width: 300px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.img{
+    height: 200px;
+    width: 300px;
+    pointer-events: none;
+    border-radius: 5px;
+}
+
+.data{
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.name{
+    letter-spacing: 0.1em;
+    pointer-events: none;
+}
+
+.price{
+    color: rgb(4, 174, 4);
+    pointer-events: none;
+}

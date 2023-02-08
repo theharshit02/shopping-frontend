@@ -1,27 +1,44 @@
 .mainbarContainer{
     width: 80%;
-    height: 80vh;
-    /* background: blueviolet; */
+    height: 85vh;
+    margin-left: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
 }
 
 .sorting{
-    margin-top: 20px;
-    width: 90%;
+    position: fixed;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 69%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 5vh;
 }
+
 .line{
     border: 1px solid rgb(167, 167, 167);
     border-bottom: 0px;
-    width: 650px;
+    width: 600px;
 }
 
 .view{
     background: transparent;
+    border-radius: 10px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.viewSelect{
+    background: black;
+    color: white;
     border-radius: 10px;
     height: 35px;
     width: 35px;
@@ -40,4 +57,16 @@
     border: 0px;
     font-size: 14px;
     margin-top: 3px;
+}
+
+.gridproducts{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.listproducts{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
 }
