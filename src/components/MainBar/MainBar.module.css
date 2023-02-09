@@ -57,6 +57,7 @@
     border: 0px;
     font-size: 14px;
     margin-top: 3px;
+    cursor: pointer;
 }
 
 .gridproducts{
@@ -69,4 +70,8 @@
     margin-top: 80px;
     display: flex;
     flex-direction: column;
+}
+
+.test{
+    color: darkorange;
 }
