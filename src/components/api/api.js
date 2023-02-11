@@ -20,4 +20,9 @@ async function listColor(){
     return result
 }
 
-export {showall, listCategories, listBrands, listColor}
+async function details(id){
+    const result = await axios.get(`http://localhost:3000/api/home/details/${id}`)
+    return result
+}
+
+export {showall, listCategories, listBrands, listColor, details}

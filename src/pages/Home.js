@@ -5,7 +5,7 @@ import SideBar from '../components/SideBar/SideBar'
 
 const Home = () => {
   return (
-    <div className="App">
+    <div className="Home">
       <header className='header'>
         <div className='breadcrumbs'>Home /&nbsp;<p className='products'>Products</p></div>
       </header>

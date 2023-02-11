@@ -1,0 +1,12 @@
+.carouselImg{
+    display: flex;
+    justify-content: center;
+}
+
+.carousel{
+    text-align: center;
+}
+
+.carousel .slider-wrapper{
+    width: 60%;
+}

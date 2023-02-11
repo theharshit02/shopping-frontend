@@ -3,7 +3,6 @@ import styles from './SideBar.module.css'
 import {listCategories, listBrands, listColor} from '../api/api'
 import Slider from 'rc-slider'
 import 'rc-slider/assets/index.css';
-import { height, width } from '@mui/system';
 
 const SideBar = () => {
   const [category, setcategory] = useState([])

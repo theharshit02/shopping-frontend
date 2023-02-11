@@ -1,0 +1,54 @@
+.ProductDetail{
+    width: 80%;
+    height: 550px;
+    display: flex;
+}
+
+.img{
+    width: 300px;
+    height: 400px;
+}
+
+.productSpecs{
+    margin-left: 200px;
+}
+
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 0.15em;
+}
+
+.stars{
+    display: flex;
+}
+
+.stars p{
+    margin: 0px;
+}
+
+.count{
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.price{
+    color: rgb(4, 174, 4);
+    pointer-events: none;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.table{
+    width: 400px;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.tableheading{
+    font-weight: bold;
+}
+
+.tabledata{
+    
+}

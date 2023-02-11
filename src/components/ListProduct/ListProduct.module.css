@@ -30,6 +30,9 @@
     color: rgb(4, 174, 4);
 }
 
+.desc{
+    width: 700px;
+}
 .btn{
     width: 70px;
     letter-spacing: 0.1em;
