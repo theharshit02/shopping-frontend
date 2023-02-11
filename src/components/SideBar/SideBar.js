@@ -8,7 +8,9 @@ const SideBar = () => {
   const [category, setcategory] = useState([])
   const [brands, setbrands] = useState([])
   const [colors, setcolors] = useState([])
-  const [value, setvalue] = useState("")
+  const [value, setvalue] = useState("100")
+  const [categorySelect, setcategorySelect] = useState("All")
+  const [colorSelect, setcolorSelect] = useState("All")
 
   useEffect(()=>{
     async function fetch(){
@@ -31,10 +33,10 @@ const SideBar = () => {
         <div>
           <p className={styles.heading}>Category</p>
           <div>
-            <p className={styles.list}>All</p>
+            <p onClick={(e)=>setcategorySelect(e.target.innerText)} style={categorySelect==="All"?{fontSize: "16px", color: "black", fontWeight: 600}:{}} className={styles.list}>All</p>
             {
               category.map((items)=>(
-                <p className={styles.list}>{items.category}</p>
+                <p onClick={(e)=>setcategorySelect(e.target.innerText)} style={categorySelect===items.category?{fontSize: "16px", color: "black", fontWeight: 600}:{}} className={styles.list}>{items.category}</p>
               ))
             }
           </div>
@@ -58,9 +60,9 @@ const SideBar = () => {
         <div>
           <p className={styles.heading}>Colors</p>
           <div className={styles.colors}>
-              <div className={styles.colorSlct}>All</div>
+              <div onClick={(e)=>setcolorSelect(e.target.id)} id="All" style={colorSelect==="All"?{fontSize: "16px", color: "black", fontWeight: 600}:{}} className={styles.colorSlct}>All</div>
               {colors.map((items)=>(
-                <div className={styles.colorSlct} style={{background: `${items.color}`}}></div>
+                <div onClick={(e)=>setcolorSelect(e.target.id)} className={styles.colorSlct} id={items.color} style={colorSelect===items.color?{background: `${items.color}`, border: "2px solid black"}:{background: `${items.color}`}}></div>
               ))}
           </div>
         </div>
