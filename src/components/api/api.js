@@ -1,7 +1,8 @@
 import axios from "axios";
 
-async function showall(){
-    const result = await axios.get("http://localhost:3000/api/home/showAll")
+async function showall(queries,sort){ 
+    const value = queries.value.toString()
+    const result = await axios.get(`http://localhost:3000/api/home/showAll?brand=${queries.brand}&category=${queries.category}&color=${queries.color}&search=${queries.search}&shipping=${queries.shipping}&value=${value}&sort=${sort}`)
     return result
 }
 
